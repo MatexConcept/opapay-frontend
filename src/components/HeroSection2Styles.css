@@ -1,0 +1,128 @@
+.section {
+  margin-top: 10px;
+  padding: 50px;
+  width: 100vw;
+  height: auto;
+  /* margin-bottom: 2px; */
+}
+
+.intro {
+  display: flex;
+  font-size: 36px;
+  font-family: "Raleway", sans-serif;
+  margin-bottom: 5px;
+  align-items: center;
+  justify-content: center;
+  color: #2a9d8f;
+}
+
+
+.img {
+  height: 500px;
+  animation: 3s slide-right;
+  -webkit-animation: 3s slide-right;
+}
+
+@keyframes slide-right {
+  from {
+    margin-left: -100%;
+  }
+  to {
+    margin-left: 0%;
+  }
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  padding: 20px;
+  gap: 60px;
+ 
+}
+.text {
+  height: auto;
+  font-size: 15px;
+  animation: 2s slide-left;
+  -webkit-animation: 2s slide-left;
+}
+
+@keyframes slide-right {
+  from {
+    margin-left: -100%;
+  }
+  to {
+    margin-left: 0%;
+  }
+}
+
+.subheading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  margin-bottom: 10px;
+  font-family: "Raleway", sans-serif;
+  color: #003049;
+}
+
+@media screen and (max-width: 1000px) {
+  .container {
+    flex-direction: column;
+  }
+  .intro {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    font-family: "Raleway", sans-serif;
+    color: #17cf97;
+    margin-bottom: 50px;
+  }
+}
+
+@media screen and (max-width: 499px) {
+  .intro {
+    font-size: 25px;
+  }
+  .img {
+    height: 250px;
+  }
+
+  .text {
+    font-size: 12px;
+    animation: 2s slide-left;
+    -webkit-animation: 2s slide-left;
+  }
+}
+
+@media screen and (max-width: 299px) {
+  .img {
+    height: 250px;
+  }
+
+  .container {
+    flex-direction: column;
+  }
+
+  .subheading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    margin-bottom: 10px;
+    font-family: "Raleway", sans-serif;
+    color: #003049;
+  }
+}
+
+@media screen and (max-width: 261px) {
+  .intro {
+    font-size: 20px;
+  }
+
+  .img {
+    height: 200px;
+  }
+}

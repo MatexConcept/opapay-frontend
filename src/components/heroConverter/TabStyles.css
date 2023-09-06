@@ -1,0 +1,144 @@
+.hero-converter{
+    /* From https://css.glass */
+background: rgba(255, 255, 255, 0.2);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+border: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 20px;
+}
+
+.cta {
+    position: relative;
+    margin: auto;
+    padding: 12px 18px;
+    transition: all 0.2s ease;
+    border: none;
+    background: none;
+    cursor: pointer;
+   }
+   
+   .cta:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    border-radius: 50px;
+    /* background: #00a896; */
+    background-color:#1b2430 ;
+    width: 45px;
+    height: 45px;
+    transition: all 0.3s ease;
+   }
+   
+   .cta .spannn {
+    position: relative;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    color: #fff;
+   }
+   
+   .cta svg {
+    position: relative;
+    top: 0;
+    margin-left: 10px;
+    fill: none;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke: #fff;
+    stroke-width: 2;
+    transform: translateX(-5px);
+    transition: all 0.3s ease;
+    
+   }
+   
+   .cta:hover:before {
+    width: 100%;
+    background-color:#1b2430 ;
+   }
+   
+   .cta:hover svg {
+    transform: translateX(0);
+   }
+   
+   .cta:active {
+    transform: scale(0.95);
+   }
+  
+   .btnn {
+   display: flex;
+   /* padding: 15px; */
+   cursor: pointer;
+   margin-top: -50px;
+   }
+  
+   .show {
+      opacity: 1;
+      filter: blur(0);
+      transform: translatex(0);
+      transition: 1s all;
+  }
+  
+  .tab-buttons button{
+    background-color: transparent;
+    border: none;
+    /* border-bottom:2px solid #264653; */
+    cursor: pointer;
+    margin-bottom: 10px;
+    font-size: 20px;
+  }
+
+  .tab-buttons button.active{
+    border-bottom:2px solid #fff;
+    color: white;
+  }
+
+  .Herooptions{
+     height: auto;
+    padding: 15px;
+ 
+    box-sizing: border-box;
+    border-radius: 10px;
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.084), 0px 2px 3px rgba(0, 0, 0, 0.168);
+    cursor: pointer;
+    position: absolute;
+    background-color:#1b2430;
+    background-size: cover;
+    top: 50%;
+    
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+    
+    display: flex;
+    flex-direction: column;
+    z-index: 1000;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+  }
+
+  .hero-dropdown-container{
+    overflow-y: auto;
+    height: 200px;
+    width: 300px;
+    color: #fff;
+  }
+
+  .hero-input-wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 120px;
+    margin-bottom: 20px;
+    color: #fff;
+  }
+
+  .timesIcon{
+    color: #fff;
+  }

@@ -1,0 +1,43 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@300;400;600;700&family=Righteous&family=Shrikhand&display=swap'); */
+/* @import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,200;0,400;1,500&display=swap'); */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: 'Jost', sans-serif;
+}
+
+
+
+body {
+  /* font-family: 'Poppins', sans-serif; */
+ overflow-x: hidden;
+/* background-color:#03011f; */
+ 
+}
+
+
+
+ 
+
+
+/* @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+overflow-x: hidden;
+font-family: 'Poppins';
+  background-color: #fff;
+} */
+
+
+
+
+
+
