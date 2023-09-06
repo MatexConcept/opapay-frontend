@@ -176,7 +176,7 @@ const Buy = () => {
  
 
   const onToken = (token) => {
-    console.log(token)
+    // console.log(token)
 
     const paymentSuccessful = true; 
 

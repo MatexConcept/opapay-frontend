@@ -5,6 +5,7 @@ import "./BuyCryptoPaymentStyles.css";
 import emailjs from '@emailjs/browser';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import { useNavigate } from "react-router-dom";
 
 
 
@@ -12,8 +13,8 @@ import 'react-toastify/dist/ReactToastify.css';
 
 const Modal = ({ open, onClose }) => {
   const form = useRef(null);
- 
-
+  
+const navigate = useNavigate('')
  
  
 
@@ -37,7 +38,6 @@ const Modal = ({ open, onClose }) => {
         }
       );
 
-      setIsLoading(false);
      
     
   };
@@ -56,7 +56,7 @@ const Modal = ({ open, onClose }) => {
       const isFormEmpty = Array.from(inputs).some((input) => !input.value.trim());
 
       if (!isFormEmpty) {
-        setIsLoading(true);
+      
         sendEmail(e);
       } else {
         toast.error("Input fields cannot be empty.", {
@@ -65,6 +65,8 @@ const Modal = ({ open, onClose }) => {
         });
       }
     }
+
+    navigate('/SellSuccess')
   };
 
  
@@ -183,25 +185,8 @@ const Modal = ({ open, onClose }) => {
 
                 </button> */}
                 <div className="button-container">
-      <button className={`send-btn ${isLoading ? 'loading' : ''}`} onClick={handleClick}  disabled={isLoading} >
-        {isLoading ? (
-          <div className="spinner center">
-            <div className="spinner-blade"></div>
-            <div className="spinner-blade"></div>
-            <div className="spinner-blade"></div>
-            <div className="spinner-blade"></div>
-            <div className="spinner-blade"></div>
-            <div className="spinner-blade"></div>
-            <div className="spinner-blade"></div>
-            <div className="spinner-blade"></div>
-            <div className="spinner-blade"></div>
-            <div className="spinner-blade"></div>
-            <div className="spinner-blade"></div>
-            <div className="spinner-blade"></div>
-          </div>
-        ) : (
-          'Send'
-        )}
+      <button className=" send-btn"  onClick={handleClick}   >
+      Send
       </button>
       <ToastContainer />
     </div>

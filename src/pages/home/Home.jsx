@@ -7,7 +7,7 @@ import Hero from '../../components/hero/Hero'
 import HeroSection from '../../components/HeroSection'
 import ThirdSection from "../../components/ThirdSection";
 import FourthSectin from '../../components/FourthSection'
-import Payment from "../../components/Payment";
+// import Payment from "../../components/Payment";
 import Footer from '../../components/footer/Footer';
 
 const Home = () => {
@@ -19,7 +19,8 @@ const Home = () => {
       <HeroSection/>
       <ThirdSection/>
       <FourthSectin/>
-      <Payment/>
+      {/* <Payment/> */}
+      <br/>
       <Footer />
     </>
    </div>
