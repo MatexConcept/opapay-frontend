@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect,  useState } from "react";
 import "../../components/login/BuyStyles.css";
 import {
   fiatCurrencies,
@@ -6,6 +6,7 @@ import {
 } from "../../components/fiatCurrencyApi";
 import { FaTimes } from "react-icons/fa";
 import './TabStyles.css'
+import { Link } from "react-router-dom";
 
 
 
@@ -334,7 +335,9 @@ const Buy = () => {
               )}
             </div>
           </div>
-          <div className="btnn">   <button className="cta">
+      <Link to= '/buyCrypto'>
+      <div>
+       <div className="btnn">   <button className="cta">
      <span className="spannn">Buy Now</span>
      <svg viewBox="0 0 13 10" height="10px" width="15px">
        <path d="M1,5 L11,5"></path>
@@ -343,6 +346,8 @@ const Buy = () => {
    </button>{" "}
  
  </div>
+       </div>
+      </Link>
 {/* 
  <small>  <img src={selectedImg} className="crypImage" />1 {CrypselectedOption} = {oneUnitConversion} {selectedOption}    <img src={selectedFiatImg} className="crypImage" /></small> */}
 

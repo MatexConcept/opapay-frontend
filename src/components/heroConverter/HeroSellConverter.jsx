@@ -8,6 +8,7 @@ import { FaTimes } from "react-icons/fa";
 
 
 import './TabStyles.css'
+import { Link } from "react-router-dom";
 
 
 
@@ -128,14 +129,7 @@ const Sell = () => {
     setToCurrency(option);
     setIsOpen(false);
 
-    const selectedCryptoCurrency = cryptoCurrencies.find(
-      (currency) => currency.code === option
-    );
-    if (selectedCryptoCurrency) {
-      setCryptoWalletAddress(selectedCryptoCurrency.walletAd);
-    } else {
-      setCryptoWalletAddress(""); // Clear the wallet address if no currency is selected
-    }
+
 
     const selectedCurrency = cryptoCurrencies.find(
       (currency) => currency.code === option
@@ -347,7 +341,9 @@ const Sell = () => {
 
          
 
-          <div className="btnn">   <button className="cta">
+<Link to='/sellCrypto'>
+<div>
+<div className="btnn">   <button className="cta">
      <span className="spannn">Sell Now</span>
      <svg viewBox="0 0 13 10" height="10px" width="15px">
        <path d="M1,5 L11,5"></path>
@@ -356,6 +352,8 @@ const Sell = () => {
    </button>{" "}
  
  </div>
+</div>
+</Link>
 
 
 
