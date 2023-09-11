@@ -348,8 +348,8 @@ const Buy = () => {
  </div>
        </div>
       </Link>
-{/* 
- <small>  <img src={selectedImg} className="crypImage" />1 {CrypselectedOption} = {oneUnitConversion} {selectedOption}    <img src={selectedFiatImg} className="crypImage" /></small> */}
+
+ <small>  <img src={selectedImg} className="crypImage" />1 {CrypselectedOption} = {oneUnitConversion} {selectedOption}    <img src={selectedFiatImg} className="crypImage" /></small>
 
         </div>
       </form>
