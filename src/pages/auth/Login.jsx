@@ -94,7 +94,7 @@ const Login = () => {
               name="email"
               value={email}
               onChange={handleInputChange}
-              className="style_input"
+              className="styles_input"
             />
             <PasswordInput
             

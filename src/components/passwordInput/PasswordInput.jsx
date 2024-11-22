@@ -18,7 +18,7 @@ const PasswordInput = ({ placeholder, value, onChange, name, onPaste }) => {
         value={value}
         onChange={onChange}
         onPaste={onPaste}
-        className="style_input"
+        className="styles_input"
       />
       <div className="icon" onClick={togglePassword}>
         {showPassword ? (
