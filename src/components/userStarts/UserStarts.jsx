@@ -6,7 +6,7 @@ import {
   CALC_SUSPENDED_USER,
   CALC_VERIFIED_USER,
 } from "../../redux/features/auth/AuthSlice";
-import InfoBox from "../infoBox/InfoBox.jsx";
+import InfoBox from "../infoBox/NfoBox.jsx";
 import "./UsersStats.scss";
 
 // Icons
