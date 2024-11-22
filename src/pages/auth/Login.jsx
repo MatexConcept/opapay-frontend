@@ -80,7 +80,7 @@ const Login = () => {
 
   return (
     <div className="login_container">
-     {isLoading && <Loader />}
+     {isLoading && <Loader/>}
     <div className="login_form_container">
       <div className="left">
       <BiLogIn size={35} color="#999" />
@@ -123,6 +123,7 @@ const Login = () => {
            <button className="white_btn">
            <Link to="/register">Register</Link>
            </button>
+           <Link to="/">Home</Link>
          
       </div>
     </div>

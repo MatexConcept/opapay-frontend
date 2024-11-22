@@ -4,68 +4,11 @@ import Tabs from "../../components/heroConverter/TabComponent";
 
 import "./HeroStyles.css";
 
-const cryptoCurrencies = [
-  { code: "BTC", name: "Bitcoin" },
-  { code: "ETH", name: "Ethereum" },
-  { code: "USDT", name: "Tether" },
 
-  // Add more crypto currency options here
-];
-
-const fiatCurrencies = [
-  { code: "USD", name: "US Dollar", flag: "https://rb.gy/2sqy2" },
-  { code: "EUR", name: "Euro" },
-  { code: "GBP", name: "British Pound Sterling" },
-  { code: "NGN", name: "Nigerian Naira" },
-  { code: "KES", name: "Kenyan Shilling" },
   // Add more fiat currency options here
-];
+
 const hero = () => {
-  const [amount, setAmount] = useState("");
-  const [fromCurrency, setFromCurrency] = useState("NGN");
-  const [toCurrency, setToCurrency] = useState("USDT");
-  const [result, setResult] = useState("");
-  const [error, setError] = useState("");
-
-  const apiKey =
-    "e962352041026f181a769f76d0989625a674589266c6f2b97b9450499d9f12cc";
-
-  useEffect(() => {
-    handleConvert();
-  }, [amount, fromCurrency, toCurrency]);
-
-  const handleAmountChange = (event) => {
-    setAmount(event.target.value);
-  };
-
-  const handleFromCurrencyChange = (event) => {
-    setFromCurrency(event.target.value);
-  };
-
-  const handleToCurrencyChange = (event) => {
-    setToCurrency(event.target.value);
-  };
-
-  const handleConvert = () => {
-    setError("");
-    const apiUrl = `https://min-api.cryptocompare.com/data/price?fsym=${fromCurrency}&tsyms=${toCurrency}&api_key=${apiKey}`;
-
-    fetch(apiUrl)
-      .then((response) => response.json())
-      .then((data) => {
-        if (data.Response === "Error") {
-          setError("Unable to fetch exchange rate.");
-        } else {
-          const rate = data[toCurrency];
-          const result = amount * rate; // Correct the conversion rate
-          setResult(result.toFixed(4));
-        }
-      })
-      .catch((error) => {
-        setError("Error: Unable to fetch exchange rate.");
-        console.error(error);
-      });
-  };
+ 
 
   return (
     <div className="heroSection">
@@ -78,7 +21,7 @@ const hero = () => {
         <div className="heroText">
           <h1>
             Forging connections between the global economies of fiat and
-            cryptocurrencies.
+            Stablecoins
           </h1>
         </div>
 

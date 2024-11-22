@@ -242,7 +242,7 @@ const Sell = () => {
                 <div className="options">
                   <div className="search-container">
                     <div className="input-wrapper">
-                      <small>Select Fiat currency</small>
+                      <small>Select Crypto Currency</small>
 
                       <FaTimes
                         size={20}
@@ -341,7 +341,7 @@ const Sell = () => {
 
                   <div>
                     <div className="input-wrapper">
-                      <small>Select Crypto currency</small>
+                      <small>Select Fiat Currency</small>
 
                       <FaTimes
                         size={20}
